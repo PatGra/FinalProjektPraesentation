@@ -5,20 +5,22 @@ $color3: rgb(11, 135, 139);
 $color4: white;
 
 //fonts
-$font-id: "Monoton";
-$font-fam: "Hammersmith One";
+$font-id: "Urbanist";
+$font-fam: "Urbanist";
 
 
 
 // mixins @if
 @mixin main-grid ($grid) {
-    @if $grid == 'main-xl' {
-        width: 100%;    
+    @if $grid=='main-xl' {
+        width: 100%;
+        height: 100%;
         display: flex;
     }
 
-    @if $grid == 'main-sm' {
-        width: 80%;    
+    @if $grid=='main-sm' {
+        width: 80%;
+        height: 80vh;
         display: flex;
     }
 }
@@ -30,71 +32,192 @@ $font-fam: "Hammersmith One";
     box-sizing: border-box;
 }
 
+
 .main {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .container-main {
     @include main-grid ('main-xl');
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.cont-main { 
-    width: 70%;   
-    height: 100vh; 
+.cont-main {
+    width: 70%;
+    height: 100vh;
     background-color: $color3;
 }
 
-.cont-aside { 
+.cont-aside {
     width: 30%;
     height: 100vh;
-    background-color: $color4;
-  
+    background-color: $color3;
+    opacity: 0.75;
 }
 
 
-.container-smal {
+.box-small {
     @include main-grid ('main-sm');
     justify-content: center;
-    margin-top: 10em;
-    box-shadow: 0rem 0rem 0.8rem  $color2;
+    margin-top: 6em;
+    box-shadow: 0rem 0rem 0.8rem $color1;
     position: absolute;
     left: 9.8em;
+
 }
 
-.cont-smal { 
+.box-main {
     width: 75%;
-    height: 500px;
     background-color: $color4;
     opacity: 0.25;
     display: flex;
     justify-content: center;
-   
 }
 
-.cont-side { 
+.box-aside {
     width: 25%;
-    
     background-color: $color3;
 }
 
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: $color1;
+    margin: 6px 0;
+}
+
+nav a:hover {
+    background-color: $color2;
+}
+
+.sub-txt {
+    font-family: $font-id;
+    font-weight: bold;
+    color: $color2;
+    opacity: .25;
+    text-transform: uppercase;
+    font-size: 10em;
+    position: relative;
+    z-index: 1;
+    top: 2em;
+    left: 1.5em;
+}
 
 .intro-txt {
     width: 25vw;
     color: $color1;
+    font-family: $font-fam;
     position: absolute;
-    top: 25em;
+    top: 35em;
     left: 15em;
 }
 
 h1 {
     color: $color1;
+    font-family: $font-id;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.box-aside {
+    position: relative;
+}
+
+.box-small nav a:hover {
+    background-color: $color2;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    font-size: 2.5em;
+}
+
+.fa-chevron-right:hover {
+    background-color: $color2;
+}
+
+.lighthouse {
+    position: relative;
 }
 
 img {
     position: absolute;
-    right:70px;
+    z-index: 3;
+    top: 0em;
+    right: 0em;
+    width: 60%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+//animation
+
+.wifi-symbol {
+    position: absolute;
+    z-index: 2;
+    right: -66.25em;
+    top: -5em;
+    color: $color2;
+    opacity: 0.4;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 95px;
+}
+
+.wifi-symbol>* {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    border-color: var(--color);
+    border-style: solid;
+    border-width: 0.8em;
+    border-radius: 100%;
+    opacity: 0;
+    animation: expansion 3s infinite;
+}
+
+.wifi-symbol> :nth-child(1) {
+    width: 100%;
+    height: 200%;
+    animation-delay: 800ms;
+}
+
+.wifi-symbol> :nth-child(2) {
+    width: 72.5%;
+    height: 145%;
+    animation-delay: 400ms;
+}
+
+.wifi-symbol> :nth-child(3) {
+    width: 45%;
+    height: 90%;
+}
+
+.wifi-symbol> :nth-child(4) {
+    width: 10%;
+    height: 20%;
+    opacity: 1;
+    background-color: var(--color);
+    animation: none;
+}
+
+@keyframes expansion {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: var(--opacity);
+    }
 }
