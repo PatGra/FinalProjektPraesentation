@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+}
+
+.container-main {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.cont-main {
+  width: 70%;
+  height: 100vh;
+  background-color: #0b878b;
+}
+
+.cont-aside {
+  width: 30%;
+  height: 100vh;
+  background-color: white;
+}
+
+.container-smal {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+  box-shadow: 0rem 0rem 0.8rem yellow;
+  position: absolute;
+  left: 9.8em;
+}
+
+.cont-smal {
+  width: 75%;
+  height: 500px;
+  background-color: white;
+  opacity: 0.25;
+  display: flex;
+  justify-content: center;
+}
+
+.cont-side {
+  width: 25%;
+  background-color: #0b878b;
+}
+
+.intro-txt {
+  width: 25vw;
+  color: black;
+  position: absolute;
+  top: 25em;
+  left: 15em;
+}
+
+h1 {
+  color: black;
+}
+
+img {
+  position: absolute;
+  right: 70px;
+}
+
+/*# sourceMappingURL=main.css.map */

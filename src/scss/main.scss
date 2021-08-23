@@ -1,0 +1,100 @@
+//colors
+$color1: black;
+$color2: yellow;
+$color3: rgb(11, 135, 139);
+$color4: white;
+
+//fonts
+$font-id: "Monoton";
+$font-fam: "Hammersmith One";
+
+
+
+// mixins @if
+@mixin main-grid ($grid) {
+    @if $grid == 'main-xl' {
+        width: 100%;    
+        display: flex;
+    }
+
+    @if $grid == 'main-sm' {
+        width: 80%;    
+        display: flex;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+}
+
+.container-main {
+    @include main-grid ('main-xl');
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.cont-main { 
+    width: 70%;   
+    height: 100vh; 
+    background-color: $color3;
+}
+
+.cont-aside { 
+    width: 30%;
+    height: 100vh;
+    background-color: $color4;
+  
+}
+
+
+.container-smal {
+    @include main-grid ('main-sm');
+    justify-content: center;
+    margin-top: 10em;
+    box-shadow: 0rem 0rem 0.8rem  $color2;
+    position: absolute;
+    left: 9.8em;
+}
+
+.cont-smal { 
+    width: 75%;
+    height: 500px;
+    background-color: $color4;
+    opacity: 0.25;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.cont-side { 
+    width: 25%;
+    
+    background-color: $color3;
+}
+
+
+.intro-txt {
+    width: 25vw;
+    color: $color1;
+    position: absolute;
+    top: 25em;
+    left: 15em;
+}
+
+h1 {
+    color: $color1;
+}
+
+img {
+    position: absolute;
+    right:70px;
+}
