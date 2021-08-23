@@ -1,12 +1,5 @@
 
 
-@use "_variables";
-@use "_mainpage";
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -87,10 +80,8 @@
 }
 
 .intro-txt {
-    width: 25vw;
-    color: $color1;
-    font-family: $font-fam;
-    margin-left: 7em;
+   display: flex;
+   justify-content: center;
 }
 
 h1 {
@@ -98,6 +89,10 @@ h1 {
     font-family: $font-id;
     text-transform: uppercase;
     margin-bottom: 1em;
+}
+
+.help:hover {
+    background-color: $color5;
 }
 
 .box-sm-aside {
@@ -206,4 +201,18 @@ img {
     15% {
         opacity: var(--opacity);
     }
+}
+
+
+.help {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.help .img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
