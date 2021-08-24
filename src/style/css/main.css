@@ -1,3 +1,77 @@
+.cont-main {
+  background-color: gray;
+}
+
+.cont-aside {
+  background-color: gray;
+}
+
+.box-sm-main {
+  background-color: gray;
+}
+
+.box-sm-aside {
+  background-color: gray;
+}
+
+.nav {
+  margin-top: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Urbanist";
+  font-size: 1em;
+  color: black;
+  justify-content: space-evenly;
+  margin-left: 2em;
+}
+
+.intro-txt {
+  width: 75%;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.help {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 6em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.help .img a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.img:hover a {
+  transform: scale(1.5);
+  color: yellow;
+  opacity: 0.5;
+}
+
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1em;
+}
+
+.help img {
+  width: 125px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1em;
+  margin: 0;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +91,7 @@
   height: 100%;
   display: flex;
   position: absolute;
+  top: 0;
 }
 
 .cont-main {
@@ -28,7 +103,7 @@
 .cont-aside {
   width: 30%;
   height: 100vh;
-  background-color: #48a5a8;
+  background-color: #4fb2b6;
 }
 
 .box-small {
@@ -37,13 +112,18 @@
   display: flex;
   box-shadow: 0rem 0rem 0.8rem black;
   margin: 0 auto;
+  margin-top: 5.5em;
+  z-index: 10;
+  border-radius: 1em;
+  position: relative;
 }
 
 .box-sm-main {
   width: 75%;
-  background-color: #48a5a8;
+  background-color: #4fb2b6;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .burger {
@@ -57,7 +137,7 @@
   z-index: 7;
   width: 35px;
   height: 35px;
-  padding-top: 6px;
+  padding-left: 6px;
 }
 .nav-burger:hover {
   background-color: yellow;
@@ -73,14 +153,14 @@
   font-size: 10em;
   z-index: 1;
   margin-top: 1em;
-  margin-left: 1em;
+  margin-left: 0.25em;
 }
 
 .intro-txt {
-  width: 25vw;
+  width: 35vw;
   color: black;
   font-family: "Urbanist";
-  margin-left: 7em;
+  margin-left: 3em;
 }
 
 h1 {
@@ -96,10 +176,6 @@ h1 {
   background-color: #0b878b;
 }
 
-.box-small nav a:hover {
-  background-color: yellow;
-}
-
 .fa-chevron-right {
   font-size: 2.5em;
 }
@@ -109,7 +185,7 @@ h1 {
   height: 70px;
   display: block;
   position: absolute;
-  right: 1em;
+  right: 6px;
   top: 50%;
   z-index: 10;
   color: black;
@@ -127,16 +203,19 @@ a:hover {
 }
 
 img {
-  z-index: 9;
+  z-index: 8;
   width: 60%;
   height: 70vh;
   object-fit: cover;
   flex-grow: 0;
+  margin-left: 2.5em;
 }
 
 .wifi-symbol {
-  z-index: 8;
+  z-index: 9;
   color: yellow;
+  margin-left: 1em;
+  margin-top: 2.5em;
   opacity: 0.4;
   overflow: hidden;
   display: inline-block;

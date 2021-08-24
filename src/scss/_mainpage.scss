@@ -1,0 +1,78 @@
+
+@use "variables";
+
+.cont-main {
+    background-color: variables.$color6;
+}
+
+.cont-aside {
+    background-color: variables.$color6;
+}
+
+.box-sm-main {
+    background-color: variables.$color6;
+}
+
+.box-sm-aside {
+    background-color: variables.$color6;
+}
+
+.nav {
+    margin-top: 1em;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: variables.$font-fam;
+    font-size: 1em;
+    color: variables.$color1;
+    justify-content: space-evenly;
+    margin-left: 2em;
+    
+}
+
+.intro-txt {
+    width: 75%;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.help {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 6em;
+    text-transform: uppercase;
+    color: variables.$color1;
+}
+
+.help .img a {
+    text-align: center;
+    text-decoration: none;
+    color: variables.$color1;
+}
+
+.img:hover a{
+    transform: scale(1.5);
+    color: variables.$color2;
+    opacity: .5;
+}
+
+.img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:1em;
+
+}
+
+.help img {
+    width: 125px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+    margin: 0;
+    text-align: center;
+}
