@@ -1,24 +1,13 @@
-.cont-main {
-  background-color: gray;
+.mainpage .cont-main, .mainpage .box-sm-aside {
+  background-color: #4fb2b6;
 }
-
-.cont-aside {
-  background-color: gray;
+.mainpage .cont-aside, .mainpage .box-sm-main {
+  background-color: #0b878b;
 }
-
-.box-sm-main {
-  background-color: gray;
+.mainpage .nav-page {
+  margin-top: 0.75em;
 }
-
-.box-sm-aside {
-  background-color: gray;
-}
-
-.nav {
-  margin-top: 1em;
-}
-
-.nav a {
+.mainpage .nav-page a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Urbanist";
@@ -27,43 +16,38 @@
   justify-content: space-evenly;
   margin-left: 2em;
 }
-
-.intro-txt {
+.mainpage .nav-page a:hover {
+  color: #7bc588;
+}
+.mainpage .intro-txt {
   width: 75%;
 }
-
-h1 {
-  margin-bottom: 0;
+.mainpage h1 {
+  margin-bottom: 0.25;
 }
-
-.help {
+.mainpage .help {
   width: 75%;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 6em;
+  margin-left: 3em;
   text-transform: uppercase;
   color: black;
 }
-
-.help .img a {
+.mainpage .help .img a {
   text-align: center;
   text-decoration: none;
   color: black;
 }
-
-.img:hover a {
+.mainpage .img:hover a {
   transform: scale(1.5);
-  color: yellow;
-  opacity: 0.5;
+  color: #7bc588;
 }
-
-.img {
+.mainpage .img {
   display: flex;
   justify-content: space-evenly;
   margin-left: 1em;
 }
-
-.help img {
+.mainpage .help img {
   width: 125px;
   height: 200px;
   object-fit: cover;
@@ -138,17 +122,16 @@ h1 {
   width: 35px;
   height: 35px;
   padding-left: 6px;
+  padding-top: 6px;
 }
 .nav-burger:hover {
-  background-color: yellow;
-  opacity: 0.5;
+  background-color: #7bc588;
 }
 
 .sub-txt {
   font-family: "Urbanist";
   font-weight: bold;
-  color: yellow;
-  opacity: 0.25;
+  color: #7bc588;
   text-transform: uppercase;
   font-size: 10em;
   z-index: 1;
@@ -167,7 +150,7 @@ h1 {
   color: black;
   font-family: "Urbanist";
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
 }
 
 .box-sm-aside {
@@ -192,8 +175,7 @@ h1 {
 }
 
 a:hover {
-  color: yellow;
-  opacity: 0.5;
+  color: #7bc588;
 }
 
 .lighthouse {
@@ -213,10 +195,9 @@ img {
 
 .wifi-symbol {
   z-index: 9;
-  color: yellow;
+  color: #7bc588;
   margin-left: 1em;
   margin-top: 2.5em;
-  opacity: 0.4;
   overflow: hidden;
   display: inline-block;
   position: relative;

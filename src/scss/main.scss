@@ -64,7 +64,6 @@
     height: 5px;
     background-color: variables.$color1;
     margin-bottom: 6px;
-    
 }
 
 
@@ -73,17 +72,16 @@
     width: 35px;
     height: 35px;
     padding-left: 6px;
+    padding-top: 6px;
     &:hover {
-        background-color: variables.$color2;
-        opacity: .5;
+        background-color: variables.$color6;
     }
 }
 
 .sub-txt {
     font-family: variables.$font-id;
     font-weight: bold;
-    color: variables.$color2;
-    opacity: .25;
+    color: variables.$color6;
     text-transform: uppercase;
     font-size: 10em;
     z-index: 1;
@@ -103,7 +101,7 @@ h1 {
     color: variables.$color1;
     font-family: variables.$font-id;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
 }
 
 .box-sm-aside {
@@ -128,8 +126,7 @@ h1 {
 }
 
 a:hover {  
-    color: variables.$color2;
-    opacity: .5;
+    color: variables.$color6;
 }
 
 .lighthouse {
@@ -151,10 +148,9 @@ img {
 
 .wifi-symbol {
     z-index: 9;
-    color: variables.$color2;
+    color: variables.$color6;
     margin-left: 1em;
     margin-top: 2.5em;
-    opacity: 0.4;
     overflow: hidden;
     display: inline-block;
     position: relative;
