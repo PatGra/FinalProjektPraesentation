@@ -5,14 +5,14 @@
   background-color: #0b878b;
 }
 .mainpage .nav-page {
-  margin-top: 0.75em;
+  margin-top: 2em;
 }
 .mainpage .nav-page a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Urbanist";
-  font-size: 1em;
-  color: black;
+  font-size: 1.5em;
+  color: white;
   justify-content: space-evenly;
   margin-left: 2em;
 }
@@ -29,14 +29,14 @@
   width: 75%;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 3em;
+  margin-left: 3.5em;
   text-transform: uppercase;
   color: black;
 }
 .mainpage .help .img a {
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .mainpage .img:hover a {
   transform: scale(1.5);
@@ -108,13 +108,16 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
 .burger {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: white;
   margin-bottom: 6px;
+  margin-left: 2em;
 }
 
 .nav-burger {
@@ -123,6 +126,7 @@
   height: 35px;
   padding-left: 6px;
   padding-top: 6px;
+  margin-top: 2em;
 }
 .nav-burger:hover {
   background-color: #7bc588;
@@ -135,19 +139,19 @@
   text-transform: uppercase;
   font-size: 10em;
   z-index: 1;
-  margin-top: 1em;
+  margin-top: 0.75em;
   margin-left: 0.25em;
 }
 
 .intro-txt {
   width: 35vw;
-  color: black;
-  font-family: "Urbanist";
+  color: white;
+  font-family: "Lato";
   margin-left: 3em;
 }
 
 h1 {
-  color: black;
+  color: white;
   font-family: "Urbanist";
   text-transform: uppercase;
   margin-bottom: 0.25em;
@@ -157,10 +161,13 @@ h1 {
   position: relative;
   width: 25%;
   background-color: #0b878b;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .fa-chevron-right {
-  font-size: 2.5em;
+  font-size: 2em;
+  color: white;
 }
 
 .box-sm-aside a {
@@ -196,7 +203,7 @@ img {
 .wifi-symbol {
   z-index: 9;
   color: #7bc588;
-  margin-left: 1em;
+  margin-left: 1.75em;
   margin-top: 2.5em;
   overflow: hidden;
   display: inline-block;

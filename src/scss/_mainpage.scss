@@ -11,22 +11,23 @@
     }
     
     .nav-page{
-        margin-top: .75em;
+        margin-top: 2em;
     }
     
     .nav-page a {
         text-decoration: none;
         text-transform: uppercase;
-        font-family: variables.$font-fam;
-        font-size: 1em;
-        color: variables.$color1;
+        font-family: variables.$font-id;
+       
+        font-size: 1.5em;
+        color: variables.$color4;
         justify-content: space-evenly;
         margin-left: 2em;  
         &:hover {
             color: variables.$color6;
+            
         }
     }
-    
     .intro-txt {
         width: 75%;
     }
@@ -39,7 +40,7 @@
         width: 75%;
         display: flex;
         justify-content: space-evenly;
-        margin-left: 3em;
+        margin-left: 3.5em;
         text-transform: uppercase;
         color: variables.$color1;
     }
@@ -47,7 +48,7 @@
     .help .img a {
         text-align: center;
         text-decoration: none;
-        color: variables.$color1;
+        color: variables.$color4;
     }
     
     .img:hover a{

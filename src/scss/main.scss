@@ -48,6 +48,7 @@
     z-index: 10;
     border-radius: 1em;
     position: relative;
+    
 }
 
 .box-sm-main {
@@ -56,14 +57,17 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 
 .burger {
     width: 35px;
     height: 5px;
-    background-color: variables.$color1;
+    background-color: variables.$color4;
     margin-bottom: 6px;
+    margin-left: 2em;
 }
 
 
@@ -73,6 +77,7 @@
     height: 35px;
     padding-left: 6px;
     padding-top: 6px;
+    margin-top: 2em;
     &:hover {
         background-color: variables.$color6;
     }
@@ -85,20 +90,20 @@
     text-transform: uppercase;
     font-size: 10em;
     z-index: 1;
-    margin-top: 1em;
+    margin-top: 0.75em;
     margin-left: .25em;
     
 }
 
 .intro-txt {
     width: 35vw;
-    color: variables.$color1;
+    color: variables.$color4;
     font-family: variables.$font-fam;
     margin-left: 3em;
 }
 
 h1 {
-    color: variables.$color1;
+    color: variables.$color4;
     font-family: variables.$font-id;
     text-transform: uppercase;
     margin-bottom: .25em;
@@ -108,10 +113,13 @@ h1 {
     position: relative;
     width: 25%;
     background-color: variables.$color3;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .fa-chevron-right {
-    font-size: 2.5em;
+    font-size: 2em;
+    color: variables.$color4;
 }
 
 .box-sm-aside a {
@@ -149,7 +157,7 @@ img {
 .wifi-symbol {
     z-index: 9;
     color: variables.$color6;
-    margin-left: 1em;
+    margin-left: 1.75em;
     margin-top: 2.5em;
     overflow: hidden;
     display: inline-block;
