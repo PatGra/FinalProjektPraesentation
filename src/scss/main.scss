@@ -67,7 +67,7 @@
     height: 5px;
     background-color: variables.$color4;
     margin-bottom: 6px;
-    margin-left: 2em;
+    margin-left: -.35em;
 }
 
 
@@ -78,6 +78,7 @@
     padding-left: 6px;
     padding-top: 6px;
     margin-top: 2em;
+    margin-left: 2em;
     &:hover {
         background-color: variables.$color6;
     }

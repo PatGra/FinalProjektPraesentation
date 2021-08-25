@@ -117,7 +117,7 @@
   height: 5px;
   background-color: white;
   margin-bottom: 6px;
-  margin-left: 2em;
+  margin-left: -0.35em;
 }
 
 .nav-burger {
@@ -127,6 +127,7 @@
   padding-left: 6px;
   padding-top: 6px;
   margin-top: 2em;
+  margin-left: 2em;
 }
 .nav-burger:hover {
   background-color: #7bc588;
